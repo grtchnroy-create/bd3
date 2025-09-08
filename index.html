@@ -87,11 +87,11 @@
       </ul>
       <div class="wxbox">
         <div class="wxid">
-          <span>📌 围※xin号：</span>
+          <span>📌 微※xin号：</span>
           <code id="wxid">sxmmls6</code>
           <button class="btn" type="button" id="copyBtn">复制围※xin号</button>
         </div>
-        <div class="hint">（复制围※xin号添加好友）</div>
+        <div class="hint">（复制微※xin号添加好友）</div>
       </div>
     </section>
 
@@ -135,12 +135,12 @@
       const text = wxidEl.textContent.trim();
       try {
         await navigator.clipboard.writeText(text);
-        showToast('围※xin号已复制：' + text);
+        showToast('微※xin号已复制：' + text);
       } catch (e) {
         const t = document.createElement('textarea');
         t.value = text; document.body.appendChild(t);
         t.select(); document.execCommand('copy'); document.body.removeChild(t);
-        showToast('围※xin号已复制：' + text);
+        showToast('微※xin号已复制：' + text);
       }
     });
   </script>
